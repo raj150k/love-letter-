@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌 Para Ti — VIP Love Letter</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Great+Vibes&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 (for extra icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== FLOATING HEARTS BACKGROUND ===== -->
+    <div class="hearts-bg" id="heartsBg"></div>
+
+    <!-- ===== SPARKLE OVERLAY (mice / particles) ===== -->
+    <canvas id="sparkleCanvas"></canvas>
+
+    <!-- ===== MAIN CONTAINER ===== -->
+    <div class="container">
+
+        <!-- Title -->
+        <div class="title-group">
+            <h1 class="title">
+                <span class="title-icon">💖</span>
+                Para Ti
+                <span class="title-icon">💖</span>
+            </h1>
+            <p class="subtitle">
+                <i class="fa-regular fa-hand-pointer"></i>
+                Haz clic en el sobre para abrir tu carta
+            </p>
+        </div>
+
+        <!-- === ENVELOPE === -->
+        <div class="envelope-wrapper">
+            <div class="envelope" id="envelope">
+
+                <!-- Envelope - Back panel -->
+                <div class="env-back"></div>
+
+                <!-- Envelope - Bottom pocket (front) -->
+                <div class="env-front"></div>
+
+                <!-- Envelope - Flap (triangle top) -->
+                <div class="env-flap" id="envFlap">
+                    <div class="flap-inner"></div>
+                </div>
+
+                <!-- Heart seal (on flap) -->
+                <div class="heart-seal" id="heartSeal">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <!-- === LETTER (INSIDE ENVELOPE) === -->
+                <div class="letter" id="letter">
+                    <div class="letter-paper">
+
+                        <h2 class="letter-heading">Mi Amor,</h2>
+
+                        <!-- === YOUR ORIGINAL .Para_Ti CLASS (VIP VERSION) === -->
+                        <p class="Para_Ti">
+                            Desde el primer momento en que te vi, supe que mi vida cambiaría para siempre.
+                            Tu sonrisa ilumina mis días y tu voz es la melodía más dulce que he escuchado.
+                        </p>
+
+                        <p class="Para_Ti">
+                            Cada momento a tu lado es un regalo. Eres mi pensamiento favorito al despertar
+                            y el último sueño antes de dormir. Gracias por existir y por elegirme.
+                        </p>
+
+                        <p class="Para_Ti">
+                            Te amo más de lo que las palabras pueden expresar, pero aquí van mis letras
+                            intentando alcanzarte: eres mi hoy, mi mañana y mi siempre.
+                        </p>
+
+                        <!-- Signature -->
+                        <div class="signature-wrapper">
+                            <div class="signature-line"></div>
+                            <p class="signature">
+                                Con todo mi amor,<br>
+                                <span class="signature-name">Siempre tuyo</span>
+                                <span class="signature-heart">💕</span>
+                            </p>
+                        </div>
+
+                        <!-- Small decorative rose -->
+                        <div class="letter-rose">🌹</div>
+
+                    </div>
+                </div>
+                <!-- === END LETTER === -->
+
+            </div>
+        </div>
+        <!-- === END ENVELOPE === -->
+
+        <!-- Reset / Close button -->
+        <button class="reset-btn" id="resetBtn">
+            <i class="fa-regular fa-envelope"></i>
+            Cerrar sobre
+        </button>
+
+        <!-- Footer note -->
+        <p class="footer-note">💝 Hecho con amor — para ti</p>
+
+    </div>
+
+    <!-- ===== EXTERNAL JAVASCRIPT ===== -->
+    <script src="js/script.js"></script>
+
+</body>
+  </html>
